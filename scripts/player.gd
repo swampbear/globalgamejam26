@@ -6,19 +6,24 @@ const JUMP_VELOCITY = -400.0
 
 @onready var coins_label: Label = $Camera2D/coins_label
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var timer: Timer = $Timer
+
 
 var coins: int = 0
 var dead: bool = false
 var double_jump_available = true
-var active_mask = "theif"
+#var active_mask = "theif"
+var active_mask = GameState.current_mask
 
 func add_coin() -> void:
 	coins += 1
 	coins_label.text = str(coins) + "/5"
 
 func kill() -> void:
+	timer.start()
 	dead = true
 	animated_sprite.play("hurt")
+
 
 
 func _physics_process(delta: float) -> void:
@@ -68,3 +73,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_timer_timeout() -> void:
+	get_tree().reload_current_scene()

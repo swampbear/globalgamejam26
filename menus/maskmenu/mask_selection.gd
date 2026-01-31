@@ -52,12 +52,9 @@ func _populate_levels():
 		level_list.add_child(button)
 		level_buttons.append(button)
 	
-	# Auto-select first unlocked level
-	for i in range(GameState.levels.size()):
-		if GameState.levels[i].unlocked:
-			_on_level_selected(i)
-			break
-
+	# Auto-select highest unlocked level
+	_on_level_selected(GameState.get_unlocked_count()-1)
+	
 func _style_level_button(button: Button, unlocked: bool, selected: bool):
 	# Normal style
 	var normal_style = StyleBoxFlat.new()
@@ -139,5 +136,6 @@ func _clear_details():
 
 func _on_start_pressed():
 	if selected_mask and selected_level_index >= 0:
+		GameState.current_level = selected_level_index
 		GameState.current_mask = selected_mask
 		get_tree().change_scene_to_file(GameState.current_level_path)
