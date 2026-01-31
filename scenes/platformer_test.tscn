@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://d2ssggk6sfuq7"]
 
+[ext_resource type="PackedScene" uid="uid://bjxsbqe6lvq3d" path="res://shared/cat.tscn" id="1_oqsiv"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_oqsiv"]
+
 [node name="platformer_test" type="Node2D" unique_id=563576169]
+
+[node name="cat" parent="." unique_id=905038794 instance=ExtResource("1_oqsiv")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=587697664]
+zoom = Vector2(4, 4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1552361981]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1995058469]
+position = Vector2(0, 2)
+shape = SubResource("WorldBoundaryShape2D_oqsiv")

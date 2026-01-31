@@ -58,11 +58,11 @@ git push origin feature/stage-02-cave-traps
 ```
 stages/
   stage_XX_yourname/
-    yourname.tscn        # Main scene
-    yourname.gd          # Inherits BaseStage
-    yourname_data.tres   # StageData resource
-    assets/              # Stage-specific sprites, sounds
-    enemies/             # Stage-specific enemy variants
+	yourname.tscn        # Main scene
+	yourname.gd          # Inherits BaseStage
+	yourname_data.tres   # StageData resource
+	assets/              # Stage-specific sprites, sounds
+	enemies/             # Stage-specific enemy variants
 ```
 
 ### 2. Set Up Stage Data Resource

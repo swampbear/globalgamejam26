@@ -14,6 +14,7 @@ config/name="ggj26"
 run/main_scene="uid://c33f0n30gk2kb"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<<Updatedupstreamrun/main_scene="uid://c33f0n30gk2kb"
 
 [editor]
 
@@ -26,4 +27,5 @@ version_control/autoload_on_startup=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
