@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bx5xmbbfnart2"]
+
+[ext_resource type="Script" uid="uid://d3bswdr0mdipo" path="res://cutscenes/act_1_intro.gd" id="1_o6nry"]
+
+[node name="Act1Intro" type="CanvasLayer" unique_id=874175755]
+script = ExtResource("1_o6nry")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=787693493]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101960786, 0.101960786, 0.18039216, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=67361061]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=442536185]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="ActTitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1530765523]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+text = "Act I"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=34299184]
+layout_mode = 2
+text = "The Awakening"
+horizontal_alignment = 1
+
+[node name="MaskImage" type="TextureRect" parent="CenterContainer/VBoxContainer" unique_id=1980002222]
+layout_mode = 2
+stretch_mode = 5
