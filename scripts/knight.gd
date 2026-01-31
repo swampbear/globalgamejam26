@@ -4,10 +4,19 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+@onready var coins_label: Label = $coins_label
+var coins: int = 0
+
+
+func add_coin() -> void:
+	coins += 1
+	coins_label.text = str(coins) + "/5"
+
+
+
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 var double_jump_available = true
-
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
