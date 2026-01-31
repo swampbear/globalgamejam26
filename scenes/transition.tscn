@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://do67v0i7iswbp"]
+[gd_scene format=3 uid="uid://br61m8bor6lw7"]
 
 [ext_resource type="Script" uid="uid://bnjyxog6neh55" path="res://scripts/transition.gd" id="1_rerct"]
 [ext_resource type="Texture2D" uid="uid://ch4808lcjq2ls" path="res://assets_tho/Dimensional_Portal.png" id="2_f0i4t"]
@@ -69,9 +69,5 @@ sprite_frames = SubResource("SpriteFrames_0e1dl")
 autoplay = "default"
 frame_progress = 0.88050425
 
-[node name="Timer" type="Timer" parent="." unique_id=960474721]
-wait_time = 0.7
-
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

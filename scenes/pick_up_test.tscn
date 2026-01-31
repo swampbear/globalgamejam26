@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://di2oa5rrjo6ux" path="res://assets_tho/Jersey10-Regular.ttf" id="2_v8q16"]
 [ext_resource type="PackedScene" uid="uid://c7n2ldsf3a2hk" path="res://scenes/killzone.tscn" id="3_gmfiw"]
 [ext_resource type="PackedScene" uid="uid://yr6fba5u2ger" path="res://scenes/coin.tscn" id="4_7yykv"]
-[ext_resource type="PackedScene" uid="uid://do67v0i7iswbp" path="res://scenes/transition.tscn" id="7_e8w5e"]
+[ext_resource type="PackedScene" uid="uid://br61m8bor6lw7" path="res://scenes/transition.tscn" id="7_e8w5e"]
 [ext_resource type="PackedScene" uid="uid://dil7rgk2218vr" path="res://scenes/platformer_test_3.tscn" id="8_qdepv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v8q16"]
