@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 <<<<<<<Updatedupstreamrun/main_scene="uid://c33f0n30gk2kb"
 
+[autoload]
+
+GameState="*uid://bantxxhxr6fsp"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
