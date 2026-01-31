@@ -29,18 +29,18 @@ func kill() -> void:
 func _physics_process(delta: float) -> void:
 	if dead:
 		return
-	# Add the gravity.
-	if is_on_floor():
-		double_jump_available = true
 		
-	else:
-		velocity += get_gravity() * delta
-
-		if Input.is_action_just_pressed("jump") and double_jump_available:
-			velocity.y = JUMP_VELOCITY
-			double_jump_available = false
-			
-			
+	match active_mask.type:
+		MaskData.MaskType.THIEF:
+			# Add the gravity.
+			if is_on_floor():
+				double_jump_available = true
+			else:
+				if Input.is_action_just_pressed("jump") and double_jump_available:
+					velocity.y = JUMP_VELOCITY
+					double_jump_available = false
+					
+	velocity += get_gravity() * delta
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		double_jump_available = true
