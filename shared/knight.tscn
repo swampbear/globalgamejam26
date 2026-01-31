@@ -2,8 +2,21 @@
 
 [ext_resource type="Script" uid="uid://dkq6o3fpphvtx" path="res://scripts/knight.gd" id="1_cpso2"]
 [ext_resource type="Texture2D" uid="uid://tgyabyjs33j5" path="res://assets_tho/Terrible Knight/atlas.png" id="2_cpso2"]
+[ext_resource type="Texture2D" uid="uid://4x7nmd3c7bx8" path="res://assets_tho/Terrible Knight/Spritesheets/player-Hurt.png" id="2_mj8sa"]
 [ext_resource type="Texture2D" uid="uid://byuhx4xnujjtj" path="res://assets_tho/Terrible Knight/Spritesheets/player-Jump.png" id="3_mj8sa"]
 [ext_resource type="Texture2D" uid="uid://q086erjr6g22" path="res://assets_tho/Terrible Knight/Spritesheets/player-Run.png" id="4_rewaq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rewaq"]
+atlas = ExtResource("2_mj8sa")
+region = Rect2(0, 0, 128, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ha6mw"]
+atlas = ExtResource("2_mj8sa")
+region = Rect2(128, 0, 128, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8tdj"]
+atlas = ExtResource("2_mj8sa")
+region = Rect2(256, 0, 128, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1pwf5"]
 atlas = ExtResource("2_cpso2")
@@ -89,6 +102,20 @@ region = Rect2(1408, 0, 128, 96)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_rewaq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ha6mw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8tdj")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_1pwf5")
 }, {
 "duration": 1.0,
@@ -171,7 +198,7 @@ script = ExtResource("1_cpso2")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1246726264]
 position = Vector2(0, -48)
 sprite_frames = SubResource("SpriteFrames_0xp4d")
-animation = &"jump"
+animation = &"hurt"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=629360607]

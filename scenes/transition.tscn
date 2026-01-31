@@ -1,15 +1,77 @@
 [gd_scene format=3 uid="uid://do67v0i7iswbp"]
 
 [ext_resource type="Script" uid="uid://bnjyxog6neh55" path="res://scripts/transition.gd" id="1_rerct"]
+[ext_resource type="Texture2D" uid="uid://ch4808lcjq2ls" path="res://assets_tho/Dimensional_Portal.png" id="2_f0i4t"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_rerct"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_px735"]
+height = 34.0
 
-[node name="transition_to_2" type="Area2D" unique_id=1876158526]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmi56"]
+atlas = ExtResource("2_f0i4t")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hi828"]
+atlas = ExtResource("2_f0i4t")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50nbv"]
+atlas = ExtResource("2_f0i4t")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ancn"]
+atlas = ExtResource("2_f0i4t")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvx3c"]
+atlas = ExtResource("2_f0i4t")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kejnv"]
+atlas = ExtResource("2_f0i4t")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0e1dl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmi56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hi828")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50nbv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ancn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvx3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kejnv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="transition" type="Area2D" unique_id=1876158526]
 script = ExtResource("1_rerct")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1457117053]
-position = Vector2(0, -10)
-shape = SubResource("CircleShape2D_rerct")
+position = Vector2(0, -17)
+shape = SubResource("CapsuleShape2D_px735")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1592807613]
+position = Vector2(-1, -16)
+sprite_frames = SubResource("SpriteFrames_0e1dl")
+autoplay = "default"
+frame_progress = 0.88050425
+
+[node name="Timer" type="Timer" parent="." unique_id=960474721]
+wait_time = 0.7
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

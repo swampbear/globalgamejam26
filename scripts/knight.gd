@@ -5,20 +5,24 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 @onready var coins_label: Label = $coins_label
-var coins: int = 0
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
+var coins: int = 0
+var dead: bool = false
+var double_jump_available = true
 
 func add_coin() -> void:
 	coins += 1
 	coins_label.text = str(coins) + "/5"
 
+func kill() -> void:
+	dead = true
+	animated_sprite.play("hurt")
 
-
-@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-
-var double_jump_available = true
 
 func _physics_process(delta: float) -> void:
+	if dead:
+		return
 	# Add the gravity.
 	if is_on_floor():
 		double_jump_available = true
