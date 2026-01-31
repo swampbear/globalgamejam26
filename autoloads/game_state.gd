@@ -5,7 +5,7 @@ var current_level: int = 0
 var current_level_path: String = ""
 
 var levels: Array = [
-	{"id":0, "name": "I", "path": "res://scenes/platformer_test_2.tscn", "unlocked": true},
+	{"id":0, "name": "I", "path": "res://scenes/pick_up_test.tscn", "unlocked": true},
 	{"id":1, "name": "II", "path": "res://scenes/platformer_test_3.tscn", "unlocked": false},
 ]
 
