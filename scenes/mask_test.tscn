@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dgctbnoo8bjqr"]
+
+[ext_resource type="Texture2D" uid="uid://bimd1c4u1yoxo" path="res://assets_tho/test_mask_sheet.png" id="1_es2cp"]
+[ext_resource type="Script" uid="uid://kue306sqnmg5" path="res://scripts/mask_test.gd" id="1_hi4ye"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hi4ye"]
+atlas = ExtResource("1_es2cp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbxdk"]
+atlas = ExtResource("1_es2cp")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nt6p8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hi4ye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbxdk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o5rh2"]
+radius = 13.0
+
+[node name="mask_test" type="Area2D" unique_id=1020041922]
+script = ExtResource("1_hi4ye")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1654537221]
+position = Vector2(2, -16)
+sprite_frames = SubResource("SpriteFrames_nt6p8")
+autoplay = "default"
+frame_progress = 0.7805654
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2058823491]
+position = Vector2(0, -13)
+shape = SubResource("CircleShape2D_o5rh2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
