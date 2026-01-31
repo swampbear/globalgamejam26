@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MaskData" format=3 uid="uid://cpmetiu4gq8mx"]
+
+[ext_resource type="Texture2D" uid="uid://g83ft7ugddn7" path="res://assets_tho/masks/cyclops.png" id="1_2gav3"]
+[ext_resource type="Script" uid="uid://xq0ggajd3lb2" path="res://scripts/mask_data.gd" id="1_r6pnb"]
+
+[resource]
+script = ExtResource("1_r6pnb")
+type = 2
+name = "cyclops"
+icon = ExtResource("1_2gav3")
+description = "An achient mask of brute strength"
+positive_effect = "Invounerable to damage"
+negative_effect = "Limited vision radius"
+metadata/_custom_type_script = "uid://xq0ggajd3lb2"

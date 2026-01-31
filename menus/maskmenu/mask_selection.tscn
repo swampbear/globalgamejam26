@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://dhtrh5kxb8ei"]
+
+[ext_resource type="Script" uid="uid://bbccpep0iwbkv" path="res://menus/maskmenu/mask_selection.gd" id="1_of5pl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_of5pl"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.18039216, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b5k5i"]
+bg_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aqnx8"]
+bg_color = Color(0.65882355, 0.52156866, 0.1254902, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_angfq"]
+bg_color = Color(0.85882354, 0.72156864, 0.1882353, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11g04"]
+bg_color = Color(0.22745098, 0.22745098, 0.22745098, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_70y4a"]
+bg_color = Color(0.101960786, 0.101960786, 0.18039216, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="MaskSelection" type="Control" unique_id=808982114]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_of5pl")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1953369118]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.050980393, 0.050980393, 0.101960786, 1)
+
+[node name="Title" type="Label" parent="." unique_id=379827850]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -249.5
+offset_right = 249.5
+offset_bottom = 77.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
+theme_override_font_sizes/font_size = 56
+text = "Choose Your Mask"
+horizontal_alignment = 1
+
+[node name="LeftPanel" type="PanelContainer" parent="." unique_id=585001807]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 130.0
+offset_right = 780.0
+offset_bottom = 950.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_of5pl")
+
+[node name="MarginContainer" type="MarginContainer" parent="LeftPanel" unique_id=1990595318]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LeftPanel/MarginContainer" unique_id=697104278]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="MaskName" type="Label" parent="LeftPanel/MarginContainer/VBoxContainer" unique_id=890262564]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098039, 0.8352941, 0.6392157, 1)
+theme_override_font_sizes/font_size = 36
+text = "Select a mask"
+horizontal_alignment = 1
+
+[node name="MaskPreview" type="TextureRect" parent="LeftPanel/MarginContainer/VBoxContainer" unique_id=408198891]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Description" type="RichTextLabel" parent="LeftPanel/MarginContainer/VBoxContainer" unique_id=160201802]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.6901961, 0.6901961, 0.6901961, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+
+[node name="PositiveLabel" type="Label" parent="LeftPanel/MarginContainer/VBoxContainer" unique_id=1857641242]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2901961, 0.87058824, 0.5019608, 1)
+theme_override_font_sizes/font_size = 22
+
+[node name="NegativeLabel" type="Label" parent="LeftPanel/MarginContainer/VBoxContainer" unique_id=1181667118]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.972549, 0.44313726, 0.44313726, 1)
+theme_override_font_sizes/font_size = 22
+
+[node name="StartButton" type="Button" parent="LeftPanel/MarginContainer/VBoxContainer" unique_id=2137796829]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.050980393, 0.050980393, 0.101960786, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_b5k5i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_aqnx8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_angfq")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_11g04")
+disabled = true
+text = "Start Level"
+
+[node name="RightPanel" type="PanelContainer" parent="." unique_id=1968058902]
+layout_mode = 0
+offset_left = 860.0
+offset_top = 130.0
+offset_right = 1840.0
+offset_bottom = 950.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_70y4a")
+
+[node name="MarginContainer" type="MarginContainer" parent="RightPanel" unique_id=1170583525]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="GridContainer" type="GridContainer" parent="RightPanel/MarginContainer" unique_id=128457361]
+layout_mode = 2
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 3

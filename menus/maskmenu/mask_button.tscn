@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dhqv4blsn6f40"]
+
+[ext_resource type="Script" uid="uid://b2uxu86relei2" path="res://menus/maskmenu/mask_button.gd" id="1_76ynq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm1br"]
+bg_color = Color(0.14509805, 0.14509805, 0.2509804, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.22745098, 0.22745098, 0.36078432, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_cm1br"]
+
+[node name="MaskButton" type="TextureButton" unique_id=1957061894]
+custom_minimum_size = Vector2(260, 260)
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("1_76ynq")
+
+[node name="NameLabel" type="Label" parent="." unique_id=1708504983]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_cm1br")
+label_settings = SubResource("LabelSettings_cm1br")
+horizontal_alignment = 1
+vertical_alignment = 1

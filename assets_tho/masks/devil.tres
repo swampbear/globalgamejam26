@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MaskData" format=3 uid="uid://btj5rf0bx3j1c"]
+
+[ext_resource type="Script" uid="uid://xq0ggajd3lb2" path="res://scripts/mask_data.gd" id="1_cer6r"]
+[ext_resource type="Texture2D" uid="uid://vp8xwiog3ci5" path="res://assets_tho/masks/devil.png" id="1_jpxsj"]
+
+[resource]
+script = ExtResource("1_cer6r")
+type = 4
+name = "Devil"
+icon = ExtResource("1_jpxsj")
+description = "A cursed mask born of fire	"
+positive_effect = "Can walk throug flames"
+negative_effect = "Water is deadly"
+metadata/_custom_type_script = "uid://xq0ggajd3lb2"

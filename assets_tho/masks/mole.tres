@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MaskData" format=3 uid="uid://g2vs1sm6sm5w"]
+
+[ext_resource type="Texture2D" uid="uid://ce740nxippyxy" path="res://assets_tho/masks/mole.png" id="1_lq884"]
+[ext_resource type="Script" uid="uid://xq0ggajd3lb2" path="res://scripts/mask_data.gd" id="1_n1r7g"]
+
+[resource]
+script = ExtResource("1_n1r7g")
+type = 5
+name = "Mole"
+icon = ExtResource("1_lq884")
+description = "A  mask of the underground dwellers"
+positive_effect = "Can use burrows as shortcuts"
+negative_effect = "Gets trapped in light areas"
+metadata/_custom_type_script = "uid://xq0ggajd3lb2"

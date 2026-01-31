@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MaskData" format=3 uid="uid://cwk12f2h3nakq"]
+
+[ext_resource type="Script" uid="uid://xq0ggajd3lb2" path="res://scripts/mask_data.gd" id="1_8pueh"]
+[ext_resource type="Texture2D" uid="uid://vrwx8lq7eyuh" path="res://assets_tho/masks/angelmask.png" id="1_u8a2g"]
+
+[resource]
+script = ExtResource("1_8pueh")
+type = 1
+name = "Angel"
+icon = ExtResource("1_u8a2g")
+description = "A pure mask that shuns wordly treasures"
+positive_effect = "Can dash"
+negative_effect = "Cannot touch any coin"
+metadata/_custom_type_script = "uid://xq0ggajd3lb2"

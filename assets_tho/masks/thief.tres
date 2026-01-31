@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MaskData" format=3 uid="uid://rkxk8w4firb6"]
+
+[ext_resource type="Texture2D" uid="uid://bb8p5nr5u4eg4" path="res://assets_tho/masks/thiefmask.png" id="1_kh576"]
+[ext_resource type="Script" uid="uid://xq0ggajd3lb2" path="res://scripts/mask_data.gd" id="1_n6ia3"]
+
+[resource]
+script = ExtResource("1_n6ia3")
+name = "Thief"
+icon = ExtResource("1_kh576")
+description = "A nimble mask for the quick-fingered"
+positive_effect = "Fast movement, Double jump"
+negative_effect = "Must collect every coin"
+metadata/_custom_type_script = "uid://xq0ggajd3lb2"

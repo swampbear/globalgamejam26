@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MaskData" format=3 uid="uid://bwas5m5e22ok3"]
+
+[ext_resource type="Script" uid="uid://xq0ggajd3lb2" path="res://scripts/mask_data.gd" id="1_rfi0t"]
+[ext_resource type="Texture2D" uid="uid://cebb315cjoyj0" path="res://assets_tho/masks/knight.png" id="1_xd6xw"]
+
+[resource]
+script = ExtResource("1_rfi0t")
+type = 3
+name = "Knight"
+icon = ExtResource("1_xd6xw")
+description = "A heavy mask of honor and steel"
+positive_effect = "Immune to projectiles"
+negative_effect = "Heavy, cannot swim upward"
+metadata/_custom_type_script = "uid://xq0ggajd3lb2"
