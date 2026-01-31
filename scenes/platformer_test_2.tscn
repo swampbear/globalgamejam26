@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://d0aareh28o3r6"]
 
-[ext_resource type="PackedScene" uid="uid://pdysmf7agqya" path="res://shared/knight.tscn" id="1_oggse"]
+[ext_resource type="PackedScene" uid="uid://pdysmf7agqya" path="res://shared/player.tscn" id="1_oggse"]
 [ext_resource type="Texture2D" uid="uid://2vfxx1n5wwfm" path="res://assets_tho/Magic Cliffs/Environment/PNG/tileset.png" id="2_x48se"]
 [ext_resource type="PackedScene" uid="uid://c7n2ldsf3a2hk" path="res://scenes/killzone.tscn" id="3_bkr6p"]
 

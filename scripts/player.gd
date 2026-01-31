@@ -4,12 +4,13 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-@onready var coins_label: Label = $coins_label
+@onready var coins_label: Label = $Camera2D/coins_label
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 var coins: int = 0
 var dead: bool = false
 var double_jump_available = true
+var active_mask = "theif"
 
 func add_coin() -> void:
 	coins += 1

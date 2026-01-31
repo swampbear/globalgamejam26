@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://pdysmf7agqya"]
 
-[ext_resource type="Script" uid="uid://dkq6o3fpphvtx" path="res://scripts/knight.gd" id="1_cpso2"]
+[ext_resource type="Script" uid="uid://dkq6o3fpphvtx" path="res://scripts/player.gd" id="1_cpso2"]
 [ext_resource type="Texture2D" uid="uid://tgyabyjs33j5" path="res://assets_tho/Terrible Knight/atlas.png" id="2_cpso2"]
 [ext_resource type="Texture2D" uid="uid://4x7nmd3c7bx8" path="res://assets_tho/Terrible Knight/Spritesheets/player-Hurt.png" id="2_mj8sa"]
 [ext_resource type="Texture2D" uid="uid://byuhx4xnujjtj" path="res://assets_tho/Terrible Knight/Spritesheets/player-Jump.png" id="3_mj8sa"]
@@ -192,7 +192,7 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vm8qf"]
 
-[node name="knight" type="CharacterBody2D" unique_id=905038794]
+[node name="player" type="CharacterBody2D" unique_id=905038794]
 script = ExtResource("1_cpso2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1246726264]
