@@ -58,7 +58,7 @@ func _physics_process(delta: float) -> void:
 			animated_sprite.play("demon_run")
 			
 	else:
-		animated_sprite.play("demon_jump")
+		animated_sprite.play("batman_jump")
 		
 		
 	
