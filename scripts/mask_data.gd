@@ -9,3 +9,6 @@ enum MaskType { THIEF, ANGEL, CYCLOPS, KNIGHT, DEVIL, MOLE }
 @export_multiline var description: String = ""
 @export var positive_effect: String = ""
 @export var negative_effect: String = ""
+@export var act_1_one_liner_src: String = ""
+@export var act_2_one_liner_src: String = ""
+@export var death_one_liner_src: String = ""

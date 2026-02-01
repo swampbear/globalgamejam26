@@ -16,7 +16,7 @@ func _on_done():
 	is_done = true
 
 func _input(event):
-	if event.is_action_pressed("ui_accept"):
+	if event.is_action_pressed("ui_accept"):  
 		if is_done:
 			get_tree().change_scene_to_file("res://menus/maskmenu/mask_selection.tscn")
 		else:
