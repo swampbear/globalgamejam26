@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://4x7nmd3c7bx8" path="res://assets_tho/Terrible Knight/Spritesheets/player-Hurt.png" id="2_6wpov"]
 [ext_resource type="Texture2D" uid="uid://b8jc3r0ub1ge8" path="res://assets_tho/player-Jump.png" id="2_tff78"]
 [ext_resource type="Texture2D" uid="uid://tgyabyjs33j5" path="res://assets_tho/Terrible Knight/atlas.png" id="3_2itn8"]
+[ext_resource type="Texture2D" uid="uid://cki13w68nx8cl" path="res://assets_tho/Knight_1/Run.png" id="4_in70s"]
 [ext_resource type="Texture2D" uid="uid://byuhx4xnujjtj" path="res://assets_tho/Terrible Knight/Spritesheets/player-Jump.png" id="4_tff78"]
 [ext_resource type="Texture2D" uid="uid://q086erjr6g22" path="res://assets_tho/Terrible Knight/Spritesheets/player-Run.png" id="5_in70s"]
 
@@ -207,6 +208,34 @@ region = Rect2(3168, 160, 288, 160)
 [sub_resource type="AtlasTexture" id="AtlasTexture_2xjoo"]
 atlas = ExtResource("2_2itn8")
 region = Rect2(2880, 160, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1on6"]
+atlas = ExtResource("4_in70s")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fc5k7"]
+atlas = ExtResource("4_in70s")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3g5sx"]
+atlas = ExtResource("4_in70s")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjnpm"]
+atlas = ExtResource("4_in70s")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcvjx"]
+atlas = ExtResource("4_in70s")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0plf"]
+atlas = ExtResource("4_in70s")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0d6vt"]
+atlas = ExtResource("4_in70s")
+region = Rect2(768, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rewaq"]
 atlas = ExtResource("2_6wpov")
@@ -479,6 +508,32 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_t1on6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fc5k7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3g5sx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjnpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcvjx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0plf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0d6vt")
+}],
+"loop": true,
+"name": &"knight_run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_rewaq")
 }, {
 "duration": 1.0,
@@ -488,7 +543,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_a8tdj")
 }],
 "loop": true,
-"name": &"knight_hurt",
+"name": &"theif_hurt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -505,7 +560,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_2tuwm")
 }],
 "loop": true,
-"name": &"knight_idle",
+"name": &"theif_idle",
 "speed": 5.0
 }, {
 "frames": [{
@@ -522,7 +577,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_b4hbu")
 }],
 "loop": true,
-"name": &"knight_jump",
+"name": &"theif_jump",
 "speed": 5.0
 }, {
 "frames": [{
@@ -563,7 +618,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ohk2y")
 }],
 "loop": true,
-"name": &"knight_run",
+"name": &"theif_run",
 "speed": 5.0
 }]
 
@@ -574,10 +629,10 @@ radius = 21.0
 script = ExtResource("1_f3aqs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1246726264]
-position = Vector2(-4, -82)
+position = Vector2(39, -64)
 sprite_frames = SubResource("SpriteFrames_0xp4d")
-animation = &"demon_run"
-frame_progress = 0.32740015
+animation = &"knight_run"
+frame_progress = 0.5892297
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=629360607]
 position = Vector2(1, -21)
