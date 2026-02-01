@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://qcwd4emtce8f"]
 
 [ext_resource type="PackedScene" uid="uid://pdysmf7agqya" path="res://shared/player.tscn" id="1_emjar"]
+[ext_resource type="Script" uid="uid://dm7yt2gcwgueo" path="res://scenes/pick_up_test.gd" id="1_qdepv"]
 [ext_resource type="Texture2D" uid="uid://2vfxx1n5wwfm" path="res://assets_tho/Magic Cliffs/Environment/PNG/tileset.png" id="2_7yykv"]
 [ext_resource type="PackedScene" uid="uid://dhtrh5kxb8ei" path="res://menus/maskmenu/mask_selection.tscn" id="2_e8w5e"]
 [ext_resource type="Texture2D" uid="uid://20oqhvvw2uki" path="res://assets_tho/coin.png" id="2_gmfiw"]
@@ -853,6 +854,7 @@ sources/0 = SubResource("TileSetAtlasSource_l3xnk")
 distance = -115.0
 
 [node name="pick_up_test" type="Node2D" unique_id=563576169]
+script = ExtResource("1_qdepv")
 
 [node name="transition" parent="." unique_id=1876158526 node_paths=PackedStringArray("player") instance=ExtResource("7_e8w5e")]
 position = Vector2(155, -39)
@@ -912,3 +914,5 @@ player = NodePath("../player")
 [node name="coin5" parent="." unique_id=164245241 node_paths=PackedStringArray("player") instance=ExtResource("4_7yykv")]
 position = Vector2(104, 23)
 player = NodePath("../player")
+
+[node name="audio" type="AudioStreamPlayer" parent="." unique_id=1029019447]

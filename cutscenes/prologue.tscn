@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c3g67vystrmkp"]
 
 [ext_resource type="Script" uid="uid://dvw3ri1ucgtpv" path="res://cutscenes/prologue.gd" id="1_u3yjc"]
+[ext_resource type="AudioStream" uid="uid://b4n2vbu6nvxge" path="res://audio/Narrator/Narrator_01.wav" id="2_6wgeq"]
 
 [node name="Prologue" type="CanvasLayer" unique_id=490375778]
 script = ExtResource("1_u3yjc")
@@ -23,11 +24,7 @@ offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
 bbcode_enabled = true
-text = "[center]In a world where the stage is everything...
-
-   The Theatre awaits your performance.
-
-   Five acts. Five masks. One story.[/center]"
+text = "[center]...and there enters our hero...[/center]"
 fit_content = true
 horizontal_alignment = 1
 
@@ -44,3 +41,16 @@ offset_bottom = -97.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Press SPACE to continue"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=963928462]
+stream = ExtResource("2_6wgeq")
+autoplay = true
+
+[node name="Label" type="Label" parent="." unique_id=1442715671]
+offset_left = 523.0
+offset_top = 183.0
+offset_right = 600.0
+offset_bottom = 206.0
+text = "Narrator :"
+horizontal_alignment = 1
+vertical_alignment = 1
