@@ -29,25 +29,35 @@ func get_intro_hero_sound():
 		MaskData.MaskType.THIEF:
 			if current_level == 0:
 				intro_hero_sound_src = "res://audio/Thief/Thief_01.wav"
-			else:
+			elif current_level == 1:
 				intro_hero_sound_src = "res://audio/Thief/Thief_03.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Batman/Batman_01.wav"
 		MaskData.MaskType.ANGEL:
 			if current_level == 0:
 				intro_hero_sound_src = "res://audio/Angel/Angel_01.wav"
-			else:
+			elif current_level == 1:
 				intro_hero_sound_src = "res://audio/Angel/Angel_03.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Batman/Batman_01.wav"
 		MaskData.MaskType.DEVIL:
 			if current_level == 0:
 				intro_hero_sound_src = "res://audio/Devil/Devil_01.wav"
-			else:
+			elif current_level == 1:
 				intro_hero_sound_src = "res://audio/Devil/Devil_03.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Batman/Batman_01.wav"
 		MaskData.MaskType.KNIGHT:
 			if current_level == 0:
 				intro_hero_sound_src = "res://audio/Knight/Knight_01.wav"
-			else:
+			elif current_level == 1:
 				intro_hero_sound_src = "res://audio/Knight/Knight_03.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Batman/Batman_01.wav"
 		MaskData.MaskType.CYCLOPS:
 			if current_level == 0:
 				intro_hero_sound_src = "res://audio/Cyclops/Cyclops_01.wav"
-			else:
+			elif current_level == 1:
 				intro_hero_sound_src = "res://audio/Cyclops/Cyclops_03.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Batman/Batman_01.wav"
