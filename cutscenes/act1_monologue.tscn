@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bdynodbm8u1xy"]
 
+[ext_resource type="AudioStream" uid="uid://b4n2vbu6nvxge" path="res://audio/Narrator/Narrator_01.wav" id="1_gi534"]
+
 [node name="Act1Monologue" type="CanvasLayer" unique_id=1161796418]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1586643792]
@@ -32,10 +34,14 @@ layout_mode = 2
 [node name="SpeakerLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=118225828]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "The Director"
+text = "Narrator"
 
 [node name="DialogueText" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1914362035]
 layout_mode = 2
 size_flags_vertical = 3
 bbcode_enabled = true
-text = "The stage is set. The lights dim. You stand alone in the spotlight, unsure of what awaits. But the show must go on..."
+text = "...and there enters our hero..."
+
+[node name="Narrator_intro" type="AudioStreamPlayer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=416009467]
+stream = ExtResource("1_gi534")
+autoplay = true
