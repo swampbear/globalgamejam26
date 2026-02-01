@@ -4,7 +4,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	GameState.get_intro_hero_sound()
+	GameState.get_hero_sound()
 	audio.stream = load(GameState.intro_hero_sound_src)
 	audio.play()
 	pass # Replace with function body.
