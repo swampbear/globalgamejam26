@@ -7,7 +7,6 @@ extends CanvasLayer
 func _ready():
 	# Start invisible
 	act_title.modulate.a = 0
-	subtitle.modulate.a = 0
 	mask_image.modulate.a = 0
 	
 	# Animate
