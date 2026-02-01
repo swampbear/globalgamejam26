@@ -631,8 +631,7 @@ script = ExtResource("1_f3aqs")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1246726264]
 position = Vector2(39, -64)
 sprite_frames = SubResource("SpriteFrames_0xp4d")
-animation = &"knight_run"
-frame_progress = 0.5892297
+animation = &"batman_jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=629360607]
 position = Vector2(1, -21)
