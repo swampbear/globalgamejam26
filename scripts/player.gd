@@ -22,9 +22,19 @@ func add_coin() -> void:
 func kill() -> void:
 	timer.start()
 	dead = true
-	animated_sprite.play("hurt")
+	animated_sprite.play(get_anim("death"))
 
 
+
+func get_anim(base_name: String) -> String:
+	match active_mask.type:
+		MaskData.MaskType.THIEF:
+			return "thief_" + base_name
+		MaskData.MaskType.ANGEL:
+			return "angel_" + base_name
+		MaskData.MaskType.CYCLOPS:
+			return "cyclops_" + base_name
+	return base_name
 
 func _physics_process(delta: float) -> void:
 	if dead:
@@ -57,13 +67,11 @@ func _physics_process(delta: float) -> void:
 
 	if is_on_floor():
 		if direction == 0:
-			animated_sprite.play("idle")
-			
+			animated_sprite.play(get_anim("idle"))
 		else:
-			animated_sprite.play("run")
-			
+			animated_sprite.play(get_anim("run"))
 	else:
-		animated_sprite.play("jump")
+		animated_sprite.play(get_anim("jump"))
 		
 		
 	
