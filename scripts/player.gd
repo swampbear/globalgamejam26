@@ -7,6 +7,7 @@ const JUMP_VELOCITY = -400.0
 @onready var coins_label: Label = $Camera2D/coins_label
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var timer: Timer = $Timer
+@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
 
 
 var coins: int = 0
@@ -23,6 +24,9 @@ func kill() -> void:
 	timer.start()
 	dead = true
 	animated_sprite.play(get_anim("death"))
+	audio.stream = load(GameState.death_hero_sound_src)
+	audio.play()
+	
 
 
 

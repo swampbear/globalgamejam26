@@ -511,4 +511,6 @@ shape = SubResource("CircleShape2D_vm8qf")
 [node name="Timer" type="Timer" parent="." unique_id=2049338461]
 wait_time = 0.7
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=722894103]
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
