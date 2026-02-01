@@ -38,6 +38,10 @@ func get_anim(base_name: String) -> String:
 			return "angel_" + base_name
 		MaskData.MaskType.CYCLOPS:
 			return "cyclops_" + base_name
+		MaskData.MaskType.DEVIL:
+			return "devil_" + base_name
+		MaskData.MaskType.KNIGHT:
+			return "knight_" + base_name
 	return base_name
 
 func _physics_process(delta: float) -> void:
