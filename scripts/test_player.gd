@@ -18,7 +18,7 @@ func add_coin() -> void:
 
 func kill() -> void:
 	dead = true
-	animated_sprite.play("hurt")
+	animated_sprite.play("demon_hurt")
 
 
 func _physics_process(delta: float) -> void:
@@ -52,13 +52,13 @@ func _physics_process(delta: float) -> void:
 
 	if is_on_floor():
 		if direction == 0:
-			animated_sprite.play("idle")
+			animated_sprite.play("demon_idle")
 			
 		else:
-			animated_sprite.play("run")
+			animated_sprite.play("demon_run")
 			
 	else:
-		animated_sprite.play("jump")
+		animated_sprite.play("demon_jump")
 		
 		
 	
