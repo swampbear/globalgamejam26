@@ -30,11 +30,6 @@ theme_override_font_sizes/font_size = 96
 text = "Act I"
 horizontal_alignment = 1
 
-[node name="Subtitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=34299184]
-layout_mode = 2
-text = "The Awakening"
-horizontal_alignment = 1
-
 [node name="MaskImage" type="TextureRect" parent="CenterContainer/VBoxContainer" unique_id=1980002222]
 layout_mode = 2
 stretch_mode = 5

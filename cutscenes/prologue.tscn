@@ -24,7 +24,7 @@ offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
 bbcode_enabled = true
-text = "[center]...and there enters our hero...[/center]"
+text = "[font_size=40][center]..and there enters our hero...[/center][/font_size]"
 fit_content = true
 horizontal_alignment = 1
 
@@ -45,12 +45,3 @@ text = "Press SPACE to continue"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=963928462]
 stream = ExtResource("2_6wgeq")
 autoplay = true
-
-[node name="Label" type="Label" parent="." unique_id=1442715671]
-offset_left = 523.0
-offset_top = 183.0
-offset_right = 600.0
-offset_bottom = 206.0
-text = "Narrator :"
-horizontal_alignment = 1
-vertical_alignment = 1
