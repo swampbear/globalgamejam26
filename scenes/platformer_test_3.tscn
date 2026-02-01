@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://dil7rgk2218vr"]
 
+[ext_resource type="Script" uid="uid://uxch07dasnpv" path="res://scenes/platformer_test_3.gd" id="1_4msn3"]
 [ext_resource type="PackedScene" uid="uid://pdysmf7agqya" path="res://shared/player.tscn" id="1_u31vf"]
 [ext_resource type="Texture2D" uid="uid://2vfxx1n5wwfm" path="res://assets_tho/Magic Cliffs/Environment/PNG/tileset.png" id="2_gu6yt"]
 [ext_resource type="Texture2D" uid="uid://20oqhvvw2uki" path="res://assets_tho/coin.png" id="2_pwqf4"]
@@ -849,6 +850,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_l3xnk")
 
 [node name="platformer_test" type="Node2D" unique_id=563576169]
+script = ExtResource("1_4msn3")
 
 [node name="player" parent="." unique_id=905038794 instance=ExtResource("1_u31vf")]
 position = Vector2(112, 155)
@@ -912,3 +914,5 @@ player = NodePath("../player")
 [node name="coin5" parent="." unique_id=84517442 node_paths=PackedStringArray("player") instance=ExtResource("5_pwqf4")]
 position = Vector2(488, -500)
 player = NodePath("../player")
+
+[node name="audio" type="AudioStreamPlayer" parent="." unique_id=1652002177]

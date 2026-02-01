@@ -27,12 +27,27 @@ func get_unlocked_count() ->int:
 func get_intro_hero_sound():
 	match current_mask.type:
 		MaskData.MaskType.THIEF:
-			intro_hero_sound_src = "res://audio/Thief/Thief_01.wav"
+			if current_level == 0:
+				intro_hero_sound_src = "res://audio/Thief/Thief_01.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Thief/Thief_03.wav"
 		MaskData.MaskType.ANGEL:
-			intro_hero_sound_src = "res://audio/Angel/Angel_01.wav"
+			if current_level == 0:
+				intro_hero_sound_src = "res://audio/Angel/Angel_01.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Angel/Angel_03.wav"
 		MaskData.MaskType.DEVIL:
-			intro_hero_sound_src = "res://audio/Devil/Devil_01.wav"
+			if current_level == 0:
+				intro_hero_sound_src = "res://audio/Devil/Devil_01.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Devil/Devil_03.wav"
 		MaskData.MaskType.KNIGHT:
-			intro_hero_sound_src = "res://audio/Knight/Knight_01.wav"
+			if current_level == 0:
+				intro_hero_sound_src = "res://audio/Knight/Knight_01.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Knight/Knight_03.wav"
 		MaskData.MaskType.CYCLOPS:
-			intro_hero_sound_src = "res://audio/Cyclops/Cyclops_01.wav"
+			if current_level == 0:
+				intro_hero_sound_src = "res://audio/Cyclops/Cyclops_01.wav"
+			else:
+				intro_hero_sound_src = "res://audio/Cyclops/Cyclops_03.wav"
