@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://pdysmf7agqya" path="res://shared/player.tscn" id="1_emjar"]
 [ext_resource type="Texture2D" uid="uid://2vfxx1n5wwfm" path="res://assets_tho/Magic Cliffs/Environment/PNG/tileset.png" id="2_7yykv"]
+[ext_resource type="PackedScene" uid="uid://dhtrh5kxb8ei" path="res://menus/maskmenu/mask_selection.tscn" id="2_e8w5e"]
 [ext_resource type="Texture2D" uid="uid://20oqhvvw2uki" path="res://assets_tho/coin.png" id="2_gmfiw"]
 [ext_resource type="FontFile" uid="uid://di2oa5rrjo6ux" path="res://assets_tho/Jersey10-Regular.ttf" id="2_v8q16"]
 [ext_resource type="PackedScene" uid="uid://c7n2ldsf3a2hk" path="res://scenes/killzone.tscn" id="3_gmfiw"]
 [ext_resource type="PackedScene" uid="uid://yr6fba5u2ger" path="res://scenes/coin.tscn" id="4_7yykv"]
 [ext_resource type="PackedScene" uid="uid://br61m8bor6lw7" path="res://scenes/transition.tscn" id="7_e8w5e"]
-[ext_resource type="PackedScene" uid="uid://dil7rgk2218vr" path="res://scenes/platformer_test_3.tscn" id="8_qdepv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v8q16"]
 atlas = ExtResource("2_gmfiw")
@@ -856,7 +856,7 @@ distance = -115.0
 
 [node name="transition" parent="." unique_id=1876158526 node_paths=PackedStringArray("player") instance=ExtResource("7_e8w5e")]
 position = Vector2(155, -39)
-scene = ExtResource("8_qdepv")
+scene = ExtResource("2_e8w5e")
 player = NodePath("../player")
 
 [node name="player" parent="." unique_id=905038794 instance=ExtResource("1_emjar")]

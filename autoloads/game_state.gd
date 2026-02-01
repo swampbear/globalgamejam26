@@ -7,6 +7,7 @@ var current_level_path: String = ""
 var levels: Array = [
 	{"id":0, "name": "I", "path": "res://scenes/pick_up_test.tscn", "unlocked": true},
 	{"id":1, "name": "II", "path": "res://scenes/platformer_test_3.tscn", "unlocked": false},
+	{"id":2, "name": "III", "path": "res://scenes/batman.tscn", "unlocked": false},
 ]
 
 func unlock_next_level():
