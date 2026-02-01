@@ -72,8 +72,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1164.0
-offset_bottom = 672.0
+offset_left = -1398.0
+offset_top = -1540.0
+offset_right = 5505.0
+offset_bottom = 2483.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.050980393, 0.050980393, 0.101960786, 1)
@@ -83,9 +85,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -249.5
-offset_right = 249.5
-offset_bottom = 77.0
+offset_left = -75.5
+offset_top = 100.0
+offset_right = 423.5
+offset_bottom = 177.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
 theme_override_font_sizes/font_size = 56
@@ -94,10 +97,10 @@ horizontal_alignment = 1
 
 [node name="LeftPanel" type="PanelContainer" parent="." unique_id=585001807]
 layout_mode = 0
-offset_left = 80.0
-offset_top = 130.0
-offset_right = 780.0
-offset_bottom = 950.0
+offset_left = 250.0
+offset_top = 200.0
+offset_right = 950.0
+offset_bottom = 1020.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_of5pl")
 
 [node name="MarginContainer" type="MarginContainer" parent="LeftPanel" unique_id=1990595318]
@@ -172,10 +175,10 @@ text = "Start Level"
 
 [node name="RightPanel" type="PanelContainer" parent="." unique_id=1968058902]
 layout_mode = 0
-offset_left = 860.0
-offset_top = 130.0
-offset_right = 1840.0
-offset_bottom = 950.0
+offset_left = 1000.0
+offset_top = 200.0
+offset_right = 1980.0
+offset_bottom = 1050.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_70y4a")
 
 [node name="MarginContainer" type="MarginContainer" parent="RightPanel" unique_id=1170583525]
@@ -187,8 +190,10 @@ theme_override_constants/margin_bottom = 20
 
 [node name="GridContainer" type="GridContainer" parent="RightPanel/MarginContainer" unique_id=128457361]
 layout_mode = 2
-theme_override_constants/h_separation = 30
-theme_override_constants/v_separation = 30
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
 columns = 3
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1062816186]

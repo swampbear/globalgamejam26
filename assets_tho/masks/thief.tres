@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="MaskData" format=3 uid="uid://rkxk8w4firb6"]
 
-[ext_resource type="Texture2D" uid="uid://bb8p5nr5u4eg4" path="res://assets_tho/masks/thiefmask.png" id="1_kh576"]
+[ext_resource type="Texture2D" uid="uid://dnbh1skwusmhu" path="res://assets_tho/masks/thief.png" id="1_kh576"]
 [ext_resource type="Script" uid="uid://xq0ggajd3lb2" path="res://scripts/mask_data.gd" id="1_n6ia3"]
 
 [resource]

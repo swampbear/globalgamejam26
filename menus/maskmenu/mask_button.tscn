@@ -4,11 +4,11 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm1br"]
 bg_color = Color(0.14509805, 0.14509805, 0.2509804, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.22745098, 0.22745098, 0.36078432, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -17,7 +17,7 @@ corner_radius_bottom_left = 8
 [sub_resource type="LabelSettings" id="LabelSettings_cm1br"]
 
 [node name="MaskButton" type="TextureButton" unique_id=1957061894]
-custom_minimum_size = Vector2(260, 260)
+custom_minimum_size = Vector2(250, 250)
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("1_76ynq")
