@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bu8g0audq5bm5"]
+
+[ext_resource type="AudioStream" uid="uid://dehfm8ip6o5uy" path="res://audio/Narrator/Narrator_08.wav" id="1_v1vty"]
+[ext_resource type="Script" uid="uid://d0x4u4qluy3ym" path="res://cutscenes/batmen_transition.gd" id="1_wrcc8"]
+
+[node name="BatmenTransition" type="CanvasLayer" unique_id=762290811]
+script = ExtResource("1_wrcc8")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1416287934]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1024795522]
+stream = ExtResource("1_v1vty")
+
+[node name="Timer" type="Timer" parent="." unique_id=1981799171]
+wait_time = 3.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

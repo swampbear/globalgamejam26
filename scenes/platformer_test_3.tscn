@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://20oqhvvw2uki" path="res://assets_tho/coin.png" id="2_pwqf4"]
 [ext_resource type="FontFile" uid="uid://di2oa5rrjo6ux" path="res://assets_tho/Jersey10-Regular.ttf" id="3_4msn3"]
 [ext_resource type="PackedScene" uid="uid://br61m8bor6lw7" path="res://scenes/transition.tscn" id="3_8x4f6"]
-[ext_resource type="PackedScene" uid="uid://dhtrh5kxb8ei" path="res://menus/maskmenu/mask_selection.tscn" id="4_0iujh"]
 [ext_resource type="PackedScene" uid="uid://yr6fba5u2ger" path="res://scenes/coin.tscn" id="5_pwqf4"]
+[ext_resource type="PackedScene" uid="uid://bu8g0audq5bm5" path="res://cutscenes/batmen_transition.tscn" id="7_4msn3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v8q16"]
 atlas = ExtResource("2_pwqf4")
@@ -892,7 +892,7 @@ tile_set = SubResource("TileSet_sqt6q")
 
 [node name="transition" parent="." unique_id=1876158526 node_paths=PackedStringArray("player") instance=ExtResource("3_8x4f6")]
 position = Vector2(62, -573)
-scene = ExtResource("4_0iujh")
+scene = ExtResource("7_4msn3")
 player = NodePath("../player")
 
 [node name="coin" parent="." unique_id=804247758 node_paths=PackedStringArray("player") instance=ExtResource("5_pwqf4")]
@@ -916,3 +916,6 @@ position = Vector2(488, -500)
 player = NodePath("../player")
 
 [node name="audio" type="AudioStreamPlayer" parent="." unique_id=1652002177]
+
+[node name="Timer" type="Timer" parent="." unique_id=530542628]
+wait_time = 96.77300000000001

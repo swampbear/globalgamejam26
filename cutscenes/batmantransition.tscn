@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://7f217f5h5j6c"]
+
+[node name="Batmantransition" type="CanvasLayer" unique_id=550833485]
+
+[node name="Timer" type="Timer" parent="." unique_id=1864769084]
+wait_time = 3.0
