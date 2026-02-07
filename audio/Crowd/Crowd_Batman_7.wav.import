@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://17nyp3vjt0wr"
-path="res://.godot/imported/Crowd_Bonus_05.wav-3a71ced8b00429efdbdfd0091d2cda57.sample"
+path="res://.godot/imported/Crowd_Batman_7.wav-aebf78f8070babd46a141175d326eec5.sample"
 
 [deps]
 
-source_file="res://audio/Crowd/Crowd_Bonus_05.wav"
-dest_files=["res://.godot/imported/Crowd_Bonus_05.wav-3a71ced8b00429efdbdfd0091d2cda57.sample"]
+source_file="res://audio/Crowd/Crowd_Batman_7.wav"
+dest_files=["res://.godot/imported/Crowd_Batman_7.wav-aebf78f8070babd46a141175d326eec5.sample"]
 
 [params]
 

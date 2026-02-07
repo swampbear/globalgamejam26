@@ -13,7 +13,6 @@ const JUMP_VELOCITY = -400.0
 var coins: int = 0
 var dead: bool = false
 var double_jump_available = true
-#var active_mask = "theif"
 var active_mask = GameState.current_mask
 
 func add_coin() -> void:

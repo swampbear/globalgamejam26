@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://815fbxttk4ef"]
+[gd_scene format=4 uid="uid://d0r1cb8yp6l64"]
 
 [ext_resource type="PackedScene" uid="uid://2ki3a8bwblst" path="res://shared/test_player.tscn" id="4_6mddt"]
 [ext_resource type="Texture2D" uid="uid://20oqhvvw2uki" path="res://assets_tho/coin.png" id="4_24oot"]

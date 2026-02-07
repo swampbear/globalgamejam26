@@ -12,7 +12,11 @@
 [ext_resource type="PackedScene" uid="uid://br61m8bor6lw7" path="res://scenes/transition.tscn" id="9_1avbm"]
 [ext_resource type="PackedScene" uid="uid://qcwd4emtce8f" path="res://scenes/pick_up_test.tscn" id="10_t8183"]
 [ext_resource type="PackedScene" uid="uid://yr6fba5u2ger" path="res://scenes/coin.tscn" id="11_ok2q5"]
+<<<<<<< HEAD
 [ext_resource type="AudioStream" uid="uid://bn2a3f8j06g2d" path="res://audio/Batman/Batman_02.wav" id="13_k5mq3"]
+=======
+[ext_resource type="Script" uid="uid://cf477hmvwlec" path="res://scenes/crowd_timer.gd" id="13_k5mq3"]
+>>>>>>> f31077c (added crowd sounds looping at the end)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3xnk"]
 texture = ExtResource("2_uu4s6")
@@ -912,6 +916,10 @@ theme_override_fonts/font = ExtResource("7_1avbm")
 text = "0/5"
 metadata/_edit_use_anchors_ = true
 
+[node name="timer" type="Timer" parent="player" unique_id=2092465012]
+
+[node name="audio" type="AudioStreamPlayer" parent="player" unique_id=986497474]
+
 [node name="killzone" parent="." unique_id=754483656 instance=ExtResource("3_pcrnf")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1565309434]
@@ -944,4 +952,14 @@ position = Vector2(2023, 321)
 player = NodePath("../player")
 
 [node name="audio" type="AudioStreamPlayer" parent="." unique_id=763654876]
+<<<<<<< HEAD
 stream = ExtResource("13_k5mq3")
+=======
+
+[node name="timer" type="Timer" parent="." unique_id=1043076543]
+wait_time = 5.0
+autostart = true
+script = ExtResource("13_k5mq3")
+
+[node name="crowd" type="AudioStreamPlayer" parent="." unique_id=1101647939]
+>>>>>>> f31077c (added crowd sounds looping at the end)

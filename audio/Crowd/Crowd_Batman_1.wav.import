@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dctqx445lt70q"
-path="res://.godot/imported/Crowd_Batman_01.wav-d42f2e653376f4eaf7ce44bde66d1154.sample"
+path="res://.godot/imported/Crowd_Batman_1.wav-fe89f486d60f466b4b71d1f8c56b058c.sample"
 
 [deps]
 
-source_file="res://audio/Crowd/Crowd_Batman_01.wav"
-dest_files=["res://.godot/imported/Crowd_Batman_01.wav-d42f2e653376f4eaf7ce44bde66d1154.sample"]
+source_file="res://audio/Crowd/Crowd_Batman_1.wav"
+dest_files=["res://.godot/imported/Crowd_Batman_1.wav-fe89f486d60f466b4b71d1f8c56b058c.sample"]
 
 [params]
 

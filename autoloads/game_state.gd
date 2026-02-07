@@ -13,7 +13,7 @@ var levels: Array = [
 ]
 
 func unlock_next_level():
-	if current_level+1 == get_unlocked_count():
+	if current_level+1 == get_unlocked_count() and current_level < 2:
 		levels[current_level+1].unlocked = true
 
 
@@ -26,6 +26,10 @@ func get_unlocked_count() ->int:
 	return total
 
 func get_hero_sound():
+	if current_level == 2:
+		intro_hero_sound_src = ""
+		death_hero_sound_src = ""
+		return
 	match current_mask.type:
 		MaskData.MaskType.THIEF:
 			death_hero_sound_src = "res://audio/Thief/Thief_02.wav"

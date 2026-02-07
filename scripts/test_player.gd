@@ -6,14 +6,12 @@ const JUMP_VELOCITY = -400.0
 
 @onready var coins_label: Label = $Camera2D/coins_label
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var timer: Timer = $Timer
-@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
-
+@onready var timer: Timer = $timer
+@onready var audio: AudioStreamPlayer = $audio
 
 var coins: int = 0
 var dead: bool = false
 var double_jump_available = true
-#var active_mask = "theif"
 var active_mask = GameState.current_mask
 
 func add_coin() -> void:
@@ -26,9 +24,6 @@ func kill() -> void:
 	animated_sprite.play(get_anim("death"))
 	audio.stream = load(GameState.death_hero_sound_src)
 	audio.play()
-	
-
-
 
 func get_anim(base_name: String) -> String:
 	match active_mask.type:
@@ -49,9 +44,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump"):
 		velocity.y = JUMP_VELOCITY
 		double_jump_available = true
-		
 
-	
 	var direction := Input.get_axis("move_left", "move_right")
 	
 	if direction > 0:
